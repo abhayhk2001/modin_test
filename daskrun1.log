@@ -1,0 +1,1012 @@
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 121, in start
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 365, in start_unsafe
+    await asyncio.wait_for(self.start_unsafe(), timeout=timeout)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 408, in wait_for
+    await self.process.start()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\process.py", line 38, in _call_and_set_future
+    res = func(*args, **kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\process.py", line 201, in _start
+    value = future.result()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\client.py", line 1238, in _start
+    process.start()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 121, in start
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 408, in wait_for
+    self.cluster = await LocalCluster(
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\deploy\spec.py", line 400, in _
+    return await fut
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 365, in start_unsafe
+    return await fut
+    self._popen = self._Popen(self)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 336, in _Popen
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 706, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 336, in _Popen
+    await self.process.start()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\process.py", line 38, in _call_and_set_future
+    self._popen = self._Popen(self)
+    response = await self.instantiate()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 441, in instantiate
+    return Popen(process_obj)
+    return Popen(process_obj)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\popen_spawn_win32.py", line 45, in __init__
+    res = func(*args, **kwargs)
+    await self._correct_state()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\deploy\spec.py", line 369, in _correct_state_internal
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\popen_spawn_win32.py", line 45, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 154, in get_preparation_data
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\process.py", line 201, in _start
+    result = await self.process.start()
+    await w  # for tornado gen.coroutine support
+    response = await self.instantiate()
+    prep_data = spawn.get_preparation_data(process_obj._name)
+    _check_not_importing_main()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 365, in start_unsafe
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 706, in start
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 336, in _Popen
+    response = await self.instantiate()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 441, in instantiate
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 154, in get_preparation_data
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 134, in _check_not_importing_main
+    return Popen(process_obj)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\popen_spawn_win32.py", line 45, in __init__
+    process.start()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\core.py", line 471, in start
+    result = await self.process.start()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 441, in instantiate
+    await self.process.start()
+    raise self.__startup_exc
+    result = await self.process.start()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 706, in start
+    prep_data = spawn.get_preparation_data(process_obj._name)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 154, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 134, in _check_not_importing_main
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 706, in start
+    await self.process.start()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\process.py", line 38, in _call_and_set_future
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\core.py", line 482, in start
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 121, in start
+    res = func(*args, **kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\process.py", line 201, in _start
+    await self.process.start()
+    raise RuntimeError('''
+    self._popen = self._Popen(self)
+    _check_not_importing_main()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\process.py", line 38, in _call_and_set_future
+    res = func(*args, **kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\process.py", line 38, in _call_and_set_future
+RuntimeError:
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 336, in _Popen
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\process.py", line 201, in _start
+    process.start()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 121, in start
+    res = func(*args, **kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\process.py", line 201, in _start
+    self._popen = self._Popen(self)
+    process.start()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 121, in start
+    await asyncio.wait_for(self.start_unsafe(), timeout=timeout)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 408, in wait_for
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 336, in _Popen
+    process.start()
+    self._popen = self._Popen(self)
+    return Popen(process_obj)
+    raise RuntimeError('''
+RuntimeError:
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.    return await fut
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 121, in start
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\popen_spawn_win32.py", line 45, in __init__
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 336, in _Popen
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 134, in _check_not_importing_main
+    self._popen = self._Popen(self)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 336, in _Popen
+    raise RuntimeError('''
+RuntimeError:
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.    prep_data = spawn.get_preparation_data(process_obj._name)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 154, in get_preparation_data
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 365, in start_unsafe
+
+    return Popen(process_obj)
+
+    return Popen(process_obj)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\popen_spawn_win32.py", line 45, in __init__
+    response = await self.instantiate()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 441, in instantiate
+    _check_not_importing_main()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\popen_spawn_win32.py", line 45, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 154, in get_preparation_data
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 134, in _check_not_importing_main
+    prep_data = spawn.get_preparation_data(process_obj._name)
+    return Popen(process_obj)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\popen_spawn_win32.py", line 45, in __init__
+    _check_not_importing_main()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 134, in _check_not_importing_main
+    prep_data = spawn.get_preparation_data(process_obj._name)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 154, in get_preparation_data
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 154, in get_preparation_data
+    result = await self.process.start()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\nanny.py", line 706, in start
+    raise RuntimeError('''
+    _check_not_importing_main()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 134, in _check_not_importing_main
+    _check_not_importing_main()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 134, in _check_not_importing_main
+    await self.process.start()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\process.py", line 38, in _call_and_set_future
+    res = func(*args, **kwargs)
+    raise RuntimeError('''
+    raise RuntimeError('''
+RuntimeError:
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+    raise RuntimeError('''
+RuntimeError:
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\process.py", line 201, in _start
+    process.start()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 121, in start
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+    self._popen = self._Popen(self)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 336, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\popen_spawn_win32.py", line 45, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 154, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 134, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+2022-11-09 23:46:39,174 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:39,207 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:39,225 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:39,253 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:39,265 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:39,308 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:39,321 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:39,340 - distributed.nanny - WARNING - Restarting worker
+UserWarning: Dask execution environment not yet initialized. Initializing...
+To remove this warning, run the following python code before doing dataframe operations:
+
+    from distributed import Client
+
+    client = Client()
+
+UserWarning: Dask execution environment not yet initialized. Initializing...
+To remove this warning, run the following python code before doing dataframe operations:
+
+    from distributed import Client
+
+    client = Client()
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\core\execution\dask\common\utils.py", line 31, in initialize_dask
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 260, in get
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 260, in get
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\core\execution\dask\common\utils.py", line 31, in initialize_dask
+    raw = cls._get_raw_from_config()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\envvars.py", line 51, in _get_raw_from_config
+Traceback (most recent call last):
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 260, in get
+    client = default_client()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\client.py", line 5176, in default_client
+Traceback (most recent call last):
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 260, in get
+    raw = cls._get_raw_from_config()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\envvars.py", line 51, in _get_raw_from_config
+    raw = cls._get_raw_from_config()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\envvars.py", line 51, in _get_raw_from_config
+    raw = cls._get_raw_from_config()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\envvars.py", line 51, in _get_raw_from_config
+Traceback (most recent call last):
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 260, in get
+    return os.environ[cls.varname]
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\os.py", line 679, in __getitem__
+    raise ValueError(
+ValueError: No clients found
+Start a client and point it to the scheduler address
+  from distributed import Client
+  client = Client('ip-addr-of-scheduler:8786')
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 260, in get
+    raw = cls._get_raw_from_config()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\envvars.py", line 51, in _get_raw_from_config
+    return os.environ[cls.varname]
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\os.py", line 679, in __getitem__
+    return os.environ[cls.varname]
+    return os.environ[cls.varname]
+  File "<string>", line 1, in <module>
+    client = default_client()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\client.py", line 5176, in default_client
+    raise KeyError(key) from None
+    return os.environ[cls.varname]
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\os.py", line 679, in __getitem__
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\os.py", line 679, in __getitem__
+    raw = cls._get_raw_from_config()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\envvars.py", line 51, in _get_raw_from_config
+KeyError: 'MODIN_ENGINE'
+
+During handling of the above exception, another exception occurred:
+
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\os.py", line 679, in __getitem__
+    raise KeyError(key) from None
+    raise KeyError(key) from None
+    raise KeyError(key) from None
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    return os.environ[cls.varname]
+Traceback (most recent call last):
+    raise ValueError(
+KeyError: 'MODIN_ENGINE'
+KeyError: 'MODIN_ENGINE'
+KeyError: 'MODIN_ENGINE'
+    raise KeyError(key) from None
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\os.py", line 679, in __getitem__
+  File "<string>", line 1, in <module>
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 125, in _main
+
+During handling of the above exception, another exception occurred:
+
+
+During handling of the above exception, another exception occurred:
+
+
+During handling of the above exception, another exception occurred:
+
+KeyError: 'MODIN_ENGINE'
+ValueError: No clients found
+Start a client and point it to the scheduler address
+  from distributed import Client
+  client = Client('ip-addr-of-scheduler:8786')
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    raise KeyError(key) from None
+KeyError: 'MODIN_ENGINE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+    prepare(preparation_data)
+    exitcode = _main(fd, parent_sentinel)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+Traceback (most recent call last):
+
+During handling of the above exception, another exception occurred:
+
+  File "<string>", line 1, in <module>
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 236, in prepare
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 125, in _main
+  File "<string>", line 1, in <module>
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    _fixup_main_from_path(data['init_main_from_path'])
+    prepare(preparation_data)
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+  File "<string>", line 1, in <module>
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 125, in _main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 125, in _main
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 287, in _fixup_main_from_path
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 125, in _main
+    exitcode = _main(fd, parent_sentinel)
+    prepare(preparation_data)
+    main_content = runpy.run_path(main_path,
+    prepare(preparation_data)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 125, in _main
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 236, in prepare
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 125, in _main
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 236, in prepare
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 125, in _main
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 289, in run_path
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 236, in prepare
+    prepare(preparation_data)
+    prepare(preparation_data)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    _fixup_main_from_path(data['init_main_from_path'])
+    prepare(preparation_data)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 236, in prepare
+    prepare(preparation_data)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 236, in prepare
+    return _run_module_code(code, init_globals, run_name,
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 287, in _fixup_main_from_path
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 287, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 287, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 289, in run_path
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 96, in _run_module_code
+    main_content = runpy.run_path(main_path,
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 287, in _fixup_main_from_path
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 289, in run_path
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 289, in run_path
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 287, in _fixup_main_from_path
+    return _run_module_code(code, init_globals, run_name,
+    _run_code(code, mod_globals, init_globals,
+    return _run_module_code(code, init_globals, run_name,
+    main_content = runpy.run_path(main_path,
+    main_content = runpy.run_path(main_path,
+    return _run_module_code(code, init_globals, run_name,
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 96, in _run_module_code
+    main_content = runpy.run_path(main_path,
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    main_content = runpy.run_path(main_path,
+    _run_code(code, mod_globals, init_globals,
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 96, in _run_module_code
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 289, in run_path
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 96, in _run_module_code
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 289, in run_path
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 289, in run_path
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 289, in run_path
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+    _run_code(code, mod_globals, init_globals,
+    return _run_module_code(code, init_globals, run_name,
+    _run_code(code, mod_globals, init_globals,
+    return _run_module_code(code, init_globals, run_name,
+    return _run_module_code(code, init_globals, run_name,
+  File "C:\Abhay\Other\Modin-Test\main.py", line 3, in <module>
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    return _run_module_code(code, init_globals, run_name,
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 96, in _run_module_code
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 96, in _run_module_code
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 96, in _run_module_code
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 96, in _run_module_code
+    exec(code, run_globals)
+    pd.read_csv("./data/data.csv")
+    exec(code, run_globals)
+    _run_code(code, mod_globals, init_globals,
+    _run_code(code, mod_globals, init_globals,
+    exec(code, run_globals)
+  File "C:\Abhay\Other\Modin-Test\main.py", line 3, in <module>
+    _run_code(code, mod_globals, init_globals,
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\logging\logger_decorator.py", line 128, in run_and_log
+    _run_code(code, mod_globals, init_globals,
+  File "C:\Abhay\Other\Modin-Test\main.py", line 3, in <module>
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+  File "C:\Abhay\Other\Modin-Test\main.py", line 3, in <module>
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    pd.read_csv("./data/data.csv")
+    return obj(*args, **kwargs)
+    pd.read_csv("./data/data.csv")
+    exec(code, run_globals)
+    exec(code, run_globals)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\logging\logger_decorator.py", line 128, in run_and_log
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\latest\io.py", line 156, in read_csv
+    exec(code, run_globals)
+    pd.read_csv("./data/data.csv")
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\logging\logger_decorator.py", line 128, in run_and_log
+    exec(code, run_globals)
+  File "C:\Abhay\Other\Modin-Test\main.py", line 3, in <module>
+  File "C:\Abhay\Other\Modin-Test\main.py", line 3, in <module>
+  File "C:\Abhay\Other\Modin-Test\main.py", line 3, in <module>
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\logging\logger_decorator.py", line 128, in run_and_log
+    return obj(*args, **kwargs)
+    return _read(**kwargs)
+  File "C:\Abhay\Other\Modin-Test\main.py", line 3, in <module>
+    return obj(*args, **kwargs)
+    pd.read_csv("./data/data.csv")
+    pd.read_csv("./data/data.csv")
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\latest\io.py", line 156, in read_csv
+    pd.read_csv("./data/data.csv")
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\common\io.py", line 35, in _read
+    return obj(*args, **kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\latest\io.py", line 156, in read_csv
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\logging\logger_decorator.py", line 128, in run_and_log
+    pd.read_csv("./data/data.csv")
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\logging\logger_decorator.py", line 128, in run_and_log
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\logging\logger_decorator.py", line 128, in run_and_log
+    return _read(**kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\latest\io.py", line 156, in read_csv
+    Engine.subscribe(_update_engine)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\logging\logger_decorator.py", line 128, in run_and_log
+    return _read(**kwargs)
+    return obj(*args, **kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\common\io.py", line 35, in _read
+    return obj(*args, **kwargs)
+    return obj(*args, **kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 217, in subscribe
+    return _read(**kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\common\io.py", line 35, in _read
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\latest\io.py", line 156, in read_csv
+    return obj(*args, **kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\latest\io.py", line 156, in read_csv
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\latest\io.py", line 156, in read_csv
+    Engine.subscribe(_update_engine)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 217, in subscribe
+    return _read(**kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\common\io.py", line 35, in _read
+    Engine.subscribe(_update_engine)
+    return _read(**kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\common\io.py", line 35, in _read
+    callback(cls)
+    return _read(**kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\latest\io.py", line 156, in read_csv
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 217, in subscribe
+    callback(cls)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\common\io.py", line 35, in _read
+    Engine.subscribe(_update_engine)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\pandas\__init__.py", line 161, in _update_engine
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\common\io.py", line 35, in _read
+    Engine.subscribe(_update_engine)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 217, in subscribe
+    initialize_dask()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 217, in subscribe
+    callback(cls)
+    callback(cls)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\pandas\__init__.py", line 136, in _update_engine
+    return _read(**kwargs)
+    Engine.subscribe(_update_engine)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\core\execution\dask\common\utils.py", line 47, in initialize_dask
+    publisher.get() == "Native"
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 262, in get
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\pandas\__init__.py", line 136, in _update_engine
+    callback(cls)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\pandas\__init__.py", line 161, in _update_engine
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 217, in subscribe
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\pandas\__init__.py", line 136, in _update_engine
+    Engine.subscribe(_update_engine)
+    client = Client(n_workers=num_cpus, memory_limit=worker_memory_limit)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\common\io.py", line 35, in _read
+    cls._value = cls._get_default()
+    publisher.get() == "Native"
+    initialize_dask()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 217, in subscribe
+    callback(cls)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\client.py", line 917, in __init__
+    publisher.get() == "Native"
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 262, in get
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 262, in get
+    Engine.subscribe(_update_engine)
+    self._loop_runner = LoopRunner(loop=loop, asynchronous=asynchronous)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\pandas\__init__.py", line 136, in _update_engine
+    callback(cls)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\envvars.py", line 111, in _get_default
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\core\execution\dask\common\utils.py", line 47, in initialize_dask
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 217, in subscribe
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\utils.py", line 449, in __init__
+    cls._value = cls._get_default()
+    cls._value = cls._get_default()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\pandas\__init__.py", line 136, in _update_engine
+    publisher.get() == "Native"
+    import distributed
+    client = Client(n_workers=num_cpus, memory_limit=worker_memory_limit)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\envvars.py", line 111, in _get_default
+    callback(cls)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\envvars.py", line 111, in _get_default
+    self._loop = IOLoop()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 262, in get
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\__init__.py", line 30, in <module>
+    import distributed
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\__init__.py", line 30, in <module>
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\pandas\__init__.py", line 136, in _update_engine
+    import distributed
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\tornado\util.py", line 275, in __new__
+    publisher.get() == "Native"
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\client.py", line 917, in __init__
+    cls._value = cls._get_default()
+    from distributed.deploy import Adaptive, LocalCluster, SpecCluster, SSHCluster
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\__init__.py", line 15, in <module>
+    from distributed.deploy import Adaptive, LocalCluster, SpecCluster, SSHCluster
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 262, in get
+    publisher.get() == "Native"
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\envvars.py", line 111, in _get_default
+    impl = cls.configured_class()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\deploy\__init__.py", line 7, in <module>
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\deploy\__init__.py", line 7, in <module>
+    self._loop_runner = LoopRunner(loop=loop, asynchronous=asynchronous)
+    from distributed.deploy.local import LocalCluster
+    from distributed.actor import Actor, ActorFuture, BaseActorFuture
+    cls._value = cls._get_default()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\tornado\util.py", line 347, in configured_class
+    import distributed
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 262, in get
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\utils.py", line 449, in __init__
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\deploy\local.py", line 14, in <module>
+    from distributed.deploy.local import LocalCluster
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\actor.py", line 14, in <module>
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\envvars.py", line 111, in _get_default
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\__init__.py", line 15, in <module>
+    base.__impl_class = cls.configurable_default()
+    cls._value = cls._get_default()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\deploy\local.py", line 12, in <module>
+    self._loop = IOLoop()
+    from distributed.nanny import Nanny
+    from distributed.client import Future
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\tornado\ioloop.py", line 326, in configurable_default
+    import distributed
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\envvars.py", line 111, in _get_default
+    from distributed.actor import Actor, ActorFuture, BaseActorFuture
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\tornado\util.py", line 288, in __new__
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+    from distributed.deploy.spec import SpecCluster
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\client.py", line 107, in <module>
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\__init__.py", line 15, in <module>
+    from tornado.platform.asyncio import AsyncIOLoop
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\actor.py", line 14, in <module>
+    from distributed.actor import Actor, ActorFuture, BaseActorFuture
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\deploy\spec.py", line 23, in <module>
+    instance.initialize(*args, **init_kwargs)
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+    from distributed.worker import get_client, get_worker, secede
+    import distributed
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\actor.py", line 14, in <module>
+    from distributed.client import Future
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\tornado\platform\asyncio.py", line 311, in initialize
+    from distributed.scheduler import Scheduler
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\worker.py", line 107, in <module>
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\__init__.py", line 15, in <module>
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\client.py", line 107, in <module>
+    from distributed.client import Future
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\scheduler.py", line 85, in <module>
+    super().initialize(loop, **kwargs)
+    from distributed.worker_state_machine import (
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+    from distributed.actor import Actor, ActorFuture, BaseActorFuture
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\client.py", line 107, in <module>
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+    from distributed.worker import get_client, get_worker, secede
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\tornado\platform\asyncio.py", line 118, in initialize
+    from distributed.worker import get_client, get_worker, secede
+    from distributed.lock import LockExtension
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\actor.py", line 14, in <module>
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\worker.py", line 107, in <module>
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\worker_state_machine.py", line 553, in <module>
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_data
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+    super().initialize(**kwargs)
+    from distributed.client import Future
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\client.py", line 107, in <module>
+    from distributed.worker_state_machine import (
+    class StealResponseMsg(SendMessageToScheduler):
+  File "<frozen importlib._bootstrap_external>", line 969, in get_code
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\tornado\ioloop.py", line 332, in initialize
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\worker.py", line 107, in <module>
+KeyboardInterrupt
+  File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+    if IOLoop.current(instance=False) is None:
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 1185, in dataclass
+    from distributed.worker import get_client, get_worker, secede
+  File "<frozen importlib._bootstrap_external>", line 1091, in path_stats
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\worker_state_machine.py", line 1016, in <module>
+    from distributed.worker_state_machine import (
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\tornado\ioloop.py", line 263, in current
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\worker.py", line 107, in <module>
+  File "<frozen importlib._bootstrap>", line 945, in _find_spec
+    loop = asyncio.get_event_loop()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 653, in get_event_loop
+    class SecedeEvent(StateMachineEvent):
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\worker_state_machine.py", line 508, in <module>
+  File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+    return wrap(cls)
+    from distributed.worker_state_machine import (
+  File "<frozen importlib._bootstrap_external>", line 1439, in find_spec
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 1185, in dataclass
+    self.set_event_loop(self.new_event_loop())
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 1176, in wrap
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\worker_state_machine.py", line 637, in <module>
+    class RescheduleMsg(SendMessageToScheduler):
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 1185, in dataclass
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 673, in new_event_loop
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+KeyboardInterrupt
+    return wrap(cls)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 1176, in wrap
+    class UnpauseEvent(StateMachineEvent):
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 1045, in _process_class
+    return self._loop_factory()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\selector_events.py", line 56, in __init__
+    return wrap(cls)
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 1025, in _process_class
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 1176, in wrap
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 1185, in dataclass
+    _set_new_attribute(cls, '__repr__', _repr_fn(flds, globals))
+  File "<frozen importlib._bootstrap_external>", line 1411, in _get_spec
+    self._make_self_pipe()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\selector_events.py", line 103, in _make_self_pipe
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 589, in _repr_fn
+  File "<frozen importlib._bootstrap_external>", line 1577, in find_spec
+    return wrap(cls)
+    _init_fn(all_init_fields,
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 580, in _init_fn
+  File "<frozen importlib._bootstrap_external>", line 161, in _path_isfile
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 1176, in wrap
+    fn = _create_fn('__repr__',
+  File "<frozen importlib._bootstrap_external>", line 153, in _path_is_mode_type
+    self._ssock, self._csock = socket.socketpair()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\socket.py", line 635, in socketpair
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 1025, in _process_class
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 434, in _create_fn
+    return _create_fn('__init__',
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 434, in _create_fn
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+  File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+    addr, port = lsock.getsockname()[:2]
+    exec(txt, globals, ns)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 1094, in _process_class
+    exec(txt, globals, ns)
+KeyboardInterrupt
+    _init_fn(all_init_fields,
+  File "<string>", line 1, in <module>
+KeyboardInterrupt
+  File "<string>", line 1, in <module>
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 580, in _init_fn
+KeyboardInterrupt
+    str(inspect.signature(cls)).replace(' -> None', ''))
+KeyboardInterrupt
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\inspect.py", line 3247, in signature
+    return _create_fn('__init__',
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\dataclasses.py", line 434, in _create_fn
+    exec(txt, globals, ns)
+    return Signature.from_callable(obj, follow_wrapped=follow_wrapped,
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\inspect.py", line 2995, in from_callable
+    return _signature_from_callable(obj, sigcls=cls,
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\inspect.py", line 2549, in _signature_from_callable
+    return _signature_bound_method(sig)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\inspect.py", line 1964, in _signature_bound_method
+  File "<string>", line 1, in <module>
+    def _signature_bound_method(sig):
+KeyboardInterrupt
+KeyboardInterrupt
+Exception ignored in: <function BaseEventLoop.__del__ at 0x000001EBA6CA32E0>
+2022-11-09 23:46:42,727 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:42,729 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:42,736 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:42,739 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:42,741 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:42,744 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:42,750 - distributed.nanny - WARNING - Restarting worker
+2022-11-09 23:46:42,762 - distributed.nanny - WARNING - Restarting worker
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+Fatal Python error: init_import_site: Failed to import the site module
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Fatal Python error: Traceback (most recent call last):
+Traceback (most recent call last):
+Python runtime state:   File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\__init__.py", line 16, in <module>      
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+init_import_site    from . import context
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 3, in <module>
+initialized  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\__init__.py", line 16, in <module>
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\__init__.py", line 16, in <module>
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\__init__.py", line 16, in <module>
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+
+    import threading
+    from . import context
+:   File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\__init__.py", line 16, in <module>
+    from . import context
+Traceback (most recent call last):
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\threading.py", line 6, in <module>
+    from . import context
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 3, in <module>
+Failed to import the site module  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 3, in <module>
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\site.py", line 617, in <module>
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 3, in <module>
+    from . import context
+    import functools
+    import threading
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+    import threading
+    import threading
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 6, in <module>
+
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\functools.py", line 18, in <module>
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\threading.py", line 6, in <module>
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\threading.py", line 6, in <module>
+    main()
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+Python runtime state:     from . import reduction
+  File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\site.py", line 600, in main
+    import functools
+    from collections import namedtuple
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+    import functools
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\multiprocessing\reduction.py", line 15, in <module>
+    known_paths = venv(known_paths)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\site.py", line 532, in venv
+initialized  File "<frozen importlib._bootstrap>", line 945, in _find_spec
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\functools.py", line 18, in <module>
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\functools.py", line 18, in <module>
+    import pickle
+
+  File "<frozen importlib._bootstrap_external>", line 1439, in find_spec
+    from collections import namedtuple
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_data
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\pickle.py", line 34, in <module>
+  File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+Traceback (most recent call last):
+    addsitepackages(known_paths, [sys.prefix])
+  File "<frozen importlib._bootstrap>", line 945, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1411, in _get_spec
+  File "<frozen importlib._bootstrap>", line 945, in _find_spec
+KeyboardInterrupt
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\site.py", line 617, in <module>
+    from collections import namedtuple
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\site.py", line 387, in addsitepackages
+    import re
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\re.py", line 125, in <module>
+  File "<frozen importlib._bootstrap_external>", line 1544, in find_spec
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 826, in find_spec
+    import sre_compile
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+    main()
+  File "<frozen importlib._bootstrap_external>", line 1439, in find_spec
+    addsitedir(sitedir, known_paths)
+  File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+  File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+KeyboardInterrupt
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\site.py", line 600, in main
+  File "<frozen importlib._bootstrap>", line 945, in _find_spec
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\site.py", line 226, in addsitedir
+  File "<frozen importlib._bootstrap_external>", line 1411, in _get_spec
+KeyboardInterrupt
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+    known_paths = venv(known_paths)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\site.py", line 532, in venv
+    addpackage(sitedir, name, known_paths)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\site.py", line 186, in addpackage
+  File "<frozen importlib._bootstrap_external>", line 1439, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1411, in _get_spec
+    exec(line)
+  File "<string>", line 1, in <module>
+  File "<frozen importlib._bootstrap_external>", line 1544, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1572, in find_spec
+    addsitepackages(known_paths, [sys.prefix])
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\site.py", line 387, in addsitepackages
+  File "<frozen importlib._bootstrap_external>", line 119, in _path_join
+KeyboardInterrupt
+  File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+    addsitedir(sitedir, known_paths)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\site.py", line 221, in addsitedir
+  File "<frozen importlib._bootstrap>", line 945, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 119, in <listcomp>
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1439, in find_spec
+    names = os.listdir(sitedir)
+KeyboardInterrupt
+KeyboardInterrupt
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_data
+  File "<frozen importlib._bootstrap_external>", line 1411, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1544, in find_spec
+KeyboardInterrupt
+  File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\core\execution\dask\common\utils.py", line 31, in initialize_dask
+    client = default_client()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\client.py", line 5176, in default_client
+    raise ValueError(
+ValueError: No clients found
+Start a client and point it to the scheduler address
+  from distributed import Client
+  client = Client('ip-addr-of-scheduler:8786')
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Abhay\Other\Modin-Test\main.py", line 3, in <module>
+    pd.read_csv("./data/data.csv")
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\logging\logger_decorator.py", line 128, in run_and_log
+    return obj(*args, **kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\latest\io.py", line 156, in read_csv
+    return _read(**kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\_compat\pandas_api\common\io.py", line 35, in _read
+    Engine.subscribe(_update_engine)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\config\pubsub.py", line 217, in subscribe
+    callback(cls)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\pandas\__init__.py", line 161, in _update_engine
+    initialize_dask()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\modin\core\execution\dask\common\utils.py", line 47, in initialize_dask
+    client = Client(n_workers=num_cpus, memory_limit=worker_memory_limit)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\client.py", line 982, in __init__
+    self.start(timeout=timeout)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\client.py", line 1172, in start
+    sync(self.loop, self._start, **kwargs)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\utils.py", line 402, in sync
+    wait(10)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\utils.py", line 391, in wait
+    return e.wait(timeout)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\threading.py", line 607, in wait
+    signaled = self._cond.wait(timeout)
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+Exception ignored in atexit callback: <function close_clusters at 0x000001DDF96FFD90>
+Traceback (most recent call last):
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\deploy\spec.py", line 677, in close_clusters
+    cluster.close(timeout=10)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\deploy\cluster.py", line 217, in close
+    return self.sync(self._close, callback_timeout=timeout)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\utils.py", line 339, in sync
+    return sync(
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\utils.py", line 406, in sync
+    raise exc.with_traceback(tb)
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\utils.py", line 379, in f
+    result = yield future
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\tornado\gen.py", line 762, in run
+    value = future.result()
+  File "C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Abhay\Other\Modin-Test\env\lib\site-packages\distributed\deploy\spec.py", line 437, in _close
+    assert w.status in {
+AssertionError: Status.init
+Task was destroyed but it is pending!
+task: <Task pending name='Task-20' coro=<_wrap_awaitable() running at C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py:650> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+Task was destroyed but it is pending!
+task: <Task pending name='Task-25' coro=<_wrap_awaitable() running at C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py:650> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+Task was destroyed but it is pending!
+task: <Task pending name='Task-23' coro=<_wrap_awaitable() running at C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py:650> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+Task was destroyed but it is pending!
+task: <Task pending name='Task-21' coro=<_wrap_awaitable() running at C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py:650> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+Task was destroyed but it is pending!
+task: <Task pending name='Task-26' coro=<_wrap_awaitable() running at C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py:650> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+Task was destroyed but it is pending!
+task: <Task pending name='Task-24' coro=<_wrap_awaitable() running at C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py:650> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+Task was destroyed but it is pending!
+task: <Task pending name='Task-22' coro=<_wrap_awaitable() running at C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py:650> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+Task was destroyed but it is pending!
+task: <Task pending name='Task-27' coro=<_wrap_awaitable() running at C:\Users\ahkashya\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py:650> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+Task was destroyed but it is pending!
+task: <Task pending name='Task-18' coro=<Cluster._sync_cluster_info()
